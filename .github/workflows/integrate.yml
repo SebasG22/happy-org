@@ -11,6 +11,7 @@ jobs:
       - uses: 'actions/setup-node@v1'
         with: 
           node-version: 14
-      - run: 'npm ci'
-      - run: 'npm install -g nx'
-      - run: 'nz'
+      - run: 'npm install -g pnpm'
+      - run: 'pnpm install'
+      - run: 'pnpm install -g nx'
+      - run: 'nx lint'
